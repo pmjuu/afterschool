@@ -48,6 +48,11 @@ function refundRegister() {
   var classTime = document.querySelector("#classTime");
   var newTime = document.createTextNode(classTime.value);
   td_newTime.appendChild(newTime);
+  
+  var td_newMcost = document.createElement("td"); //재료비: Material cost
+  var mcost = document.querySelector("#mcost");
+  var newMcost = document.createTextNode(mcost.value);
+  td_newMcost.appendChild(newMcost);
 
   var td_newRefund = document.createElement("td"); //환불 금액
   var newRefund = document.createTextNode((fee1 + fee2) * classTime.value);
@@ -71,6 +76,7 @@ function refundRegister() {
   newRow.appendChild(td_newFee1);
   newRow.appendChild(td_newFee2);
   newRow.appendChild(td_newTime);
+  newRow.appendChild(td_newMcost);
   newRow.appendChild(td_newRefund);
   newRow.appendChild(td_newDate);
   newRow.appendChild(td_newMemo);
@@ -79,5 +85,7 @@ function refundRegister() {
   refundTable.appendChild(newRow);
 
   name.value="";
+  classTime.value="";
+  mcost.value="";
   memo.value="";
 }
