@@ -55,7 +55,7 @@ function refundRegister() {
   td_newMcost.appendChild(newMcost);
 
   var td_newRefund = document.createElement("td"); //환불 금액
-  var newRefund = document.createTextNode((fee1 + fee2) * classTime.value);
+  var newRefund = document.createTextNode((fee1 + fee2) * classTime.value + mcost.value);
   td_newRefund.appendChild(newRefund);
 
   var td_newDate = document.createElement("td"); //환불 요구 기간
@@ -85,7 +85,6 @@ function refundRegister() {
   refundTable.appendChild(newRow);
 
   name.value="";
-  classTime.value="";
   mcost.value="";
   memo.value="";
 }
