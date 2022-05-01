@@ -1,0 +1,15 @@
+table {
+  border: 1px solid #444444;
+  border-collapse: collapse;
+}
+th {
+  background-color: #cccccc;
+  cursor: pointer;
+}
+th, td {
+  border: 1px solid #444444;
+  padding: 5px
+}
+table#refundTBL tr td:first-child {
+  background-color: #eeeeee;
+}
