@@ -59,28 +59,10 @@
       </ul>
     </fieldset>
     <input type="submit" value="입력">
-    <!-- <button onclick="refundRegister(); return false;">추가</button> -->
   </form>
-  
-  <!-- <table id="refundTable">
-    <caption>환불 학생 목록</caption>
-    <tr>
-      <th>이름</th>
-      <th>부서명</th>
-      <th>차시별<br>강사료</th>
-      <th>차시별<br>수용비</th>
-      <th>환불<br>차시</th>
-      <th>재료비</th>
-      <th>환불 금액</th>
-      <th>환불 요구 기간</th>
-      <th>비고</th>
-    </tr>
-  </table>
-  <script src="refundRegister.js"></script> -->
-
 
   <?php
-    $con=mysqli_connect("127.0.0.1", "root", "1234", "as_db") or die("MySQL 접속 실패");
+    $con=mysqli_connect("3.36.67.190", "admin", "890890890", "as_db") or die("MySQL 접속 실패");
 
     $sql = "SELECT * FROM refundTBL_1";
 
