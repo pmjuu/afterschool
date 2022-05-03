@@ -1,7 +1,7 @@
 <?php
   $con=mysqli_connect("localhost", "root", "1234", "as_db") or die("MySQL 접속 실패");
 
-  $sql = "SELECT * FROM refundTBL_1 WHERE studentNo='".$_GET['studentNo']."'";
+  $sql = "SELECT * FROM refundTBL2_1 WHERE studentNo='".$_GET['studentNo']."'";
 
   $ret = mysqli_query($con, $sql);
   if($ret) {
@@ -42,11 +42,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>취소 학생 삭제</title>
+  <title>결석 학생 삭제</title>
 </head>
 <body>
-  <h1>취소 학생 삭제</h1>
-  <form method="post" action="delete_result.php">
+  <h1>결석 학생 삭제</h1>
+  <form method="post" action="delete_result2.php">
     <ul>
       <li>
         ID: <input type="text" name="studentNo" value=<?php echo $studentNo ?> size="3" readonly>
