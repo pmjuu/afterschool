@@ -62,7 +62,7 @@
   </form>
 
   <?php
-    $con=mysqli_connect("127.0.0.1", "root", "1234", "as_db") or die("MySQL 접속 실패");
+    $con=mysqli_connect("localhost", "root", "1234", "as_db") or die("MySQL 접속 실패");
 
     $sql = "SELECT * FROM refundTBL_1";
 
