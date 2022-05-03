@@ -1,7 +1,7 @@
 <?php
   $con=mysqli_connect("127.0.0.1", "root", "1234", "as_db") or die("MySQL 접속 실패");
 
-  $sql = "SELECT studentNo FROM refundTBL_1 ORDER BY studentNo DESC LIMIT 1"; //마지막 studentID 불러오기
+  $sql = "SELECT studentNo FROM refundTBL_1 ORDER BY studentNo DESC LIMIT 1"; //마지막 studentNo 불러오기
   $result = mysqli_query($con, $sql);
   $data = mysqli_fetch_array($result);
 
