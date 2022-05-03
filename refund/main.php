@@ -186,7 +186,7 @@
 
     echo "<h2> 결석 학생 목록 </h2>";
     echo "*표 상단 헤더를 클릭하면 정렬이 됩니다";
-    echo "<TABLE id='refundTBL2'>";
+    echo "<TABLE id='refundTBL'>";
       echo "<TR>";
         echo "<TH>No.</TH><TH>학년</TH><TH>반</TH><TH>번호</TH><TH>이름</TH><TH>부서명</TH><TH>차시별<br>강사료</TH><TH>차시별<br>수용비</TH><TH>환불<br>차시</TH><TH>재료비</TH><TH>환불 금액</TH><TH>환불<br>시작일</TH><TH>비고</TH><TH>수정</TH><TH>삭제</TH>";
       echo "</TR>";
