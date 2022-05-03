@@ -86,7 +86,7 @@
           <select name="program" id="program">
             <script>
               //부서명 선택하는 드롭다운
-              const programList = ["독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학"];
+              //const programList = ["독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학"];
               for (var i = 0; i < programList.length; i++)
                 document.write('<option value="' + programList[i] + '">' + programList[i] + '</option>');
             </script>
