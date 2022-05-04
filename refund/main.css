@@ -1,3 +1,13 @@
+div.insert {
+  width: 50%;
+  float: left;
+}
+
+div.insert2 {
+  width: 50%;
+  float: right;
+}
+
 table {
   border: 1px solid #444444;
   border-collapse: collapse;
