@@ -9,111 +9,109 @@
 </head>
 <body>
   <h1>환불 학생 관리</h1>
-  <div class="insert">
-    <form method="post" action="insert_result.php">
-      <fieldset>
-        <legend>취소 학생 입력</legend>
-        <ul>
-          <li>
-            <label for="grade">학년</label>
-            <input type="text" name="grade" id="grade" size="3">
-          </li>
-          <li>
-            <label for="class">반</label>
-            <input type="text" name="class" id="class" size="3">
-          </li>
-          <li>
-            <label for="number">번호</label>
-            <input type="text" name="number" id="number" size="3">
-          </li>
-          <li>
-            <label for="name">이름</label>
-            <input type="text" name="name" id="name" required size="6">
-          </li>
-          <li>
-            <label for="program">부서명</label>
-            <select name="program" id="program">
-              <script>
-                //부서명 선택하는 드롭다운
-                const programList = ["독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학"];
-                for (var i = 0; i < programList.length; i++)
-                  document.write('<option value="' + programList[i] + '">' + programList[i] + '</option>');
-              </script>
-            </select>
-          </li>
-          <li>
-            <label for="classTime">환불차시</label>
-            <input type="text" name="classTime" id="classTime" size="4">
-          </li>
-          <li>
-            <label for="mcost">재료비</label>
-            <input type="text" name="mcost" id="mcost" value=0 size="6">
-          </li>
-          <li>
-            <label for="startDate">환불 시작일</label>
-            <input type="date" name="startDate">
-          </li>
-          <li>
-            <label for="memo">비고</label>
-            <input type="text" name="memo" id="memo" size="40">
-          </li>
-        </ul>
-      </fieldset>
-      <input type="submit" value="입력">
-    </form>
-  </div>
-  <div class="insert2">
-    <form method="post" action="insert_result2.php">
-      <fieldset>
-        <legend>결석 학생 입력</legend>
-        <ul>
-          <li>
-            <label for="grade">학년</label>
-            <input type="text" name="grade" id="grade" size="3">
-          </li>
-          <li>
-            <label for="class">반</label>
-            <input type="text" name="class" id="class" size="3">
-          </li>
-          <li>
-            <label for="number">번호</label>
-            <input type="text" name="number" id="number" size="3">
-          </li>
-          <li>
-            <label for="name">이름</label>
-            <input type="text" name="name" id="name" required size="6">
-          </li>
-          <li>
-            <label for="program">부서명</label>
-            <select name="program" id="program">
-              <script>
-                //부서명 선택하는 드롭다운
-                //const programList = ["독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학"];
-                for (var i = 0; i < programList.length; i++)
-                  document.write('<option value="' + programList[i] + '">' + programList[i] + '</option>');
-              </script>
-            </select>
-          </li>
-          <li>
-            <label for="classTime">환불차시</label>
-            <input type="text" name="classTime" id="classTime" size="4">
-          </li>
-          <li>
-            <label for="mcost">재료비</label>
-            <input type="text" name="mcost" id="mcost" value=0 size="6">
-          </li>
-          <li>
-            <label for="startDate">환불 시작일</label>
-            <input type="date" name="startDate">
-          </li>
-          <li>
-            <label for="memo">비고</label>
-            <input type="text" name="memo" id="memo" size="40">
-          </li>
-        </ul>
-      </fieldset>
-      <input type="submit" value="입력">
-    </form>
+  <div class="insert_form">
+    <div class="form1">
+      <form method="post" action="insert_result.php">
+        <fieldset>
+          <legend>취소 학생 입력</legend>
+          <ul>
+            <li>
+              <label for="grade">학년</label>
+              <input type="text" name="grade" id="grade" size="3">
+              <label for="class">반</label>
+              <input type="text" name="class" id="class" size="3">
+              <label for="number">번호</label>
+              <input type="text" name="number" id="number" size="3">
+            </li>
+            <li>
+              <label for="name">이름</label>
+              <input type="text" name="name" id="name" required size="6">
+            </li>
+            <li>
+              <label for="program">부서명</label>
+              <select name="program" id="program">
+                <script>
+                  //부서명 선택하는 드롭다운
+                  const programList = ["독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학"];
+                  for (var i = 0; i < programList.length; i++)
+                    document.write('<option value="' + programList[i] + '">' + programList[i] + '</option>');
+                </script>
+              </select>
+            </li>
+            <li>
+              <label for="classTime">환불차시</label>
+              <input type="text" name="classTime" id="classTime" size="4">
+            </li>
+            <li>
+              <label for="mcost">재료비</label>
+              <input type="text" name="mcost" id="mcost" value=0 size="6">
+            </li>
+            <li>
+              <label for="startDate">환불 시작일</label>
+              <input type="date" name="startDate">
+            </li>
+            <li>
+              <label for="memo">비고</label>
+              <input type="text" name="memo" id="memo" size="40">
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="입력">
+      </form>
+    </div>
+    <div class="form2">
+      <form method="post" action="insert_result2.php">
+        <fieldset>
+          <legend>결석 학생 입력</legend>
+          <ul>
+            <li>
+              <label for="grade">학년</label>
+              <input type="text" name="grade" id="grade" size="3">
+            </li>
+            <li>
+              <label for="class">반</label>
+              <input type="text" name="class" id="class" size="3">
+            </li>
+            <li>
+              <label for="number">번호</label>
+              <input type="text" name="number" id="number" size="3">
+            </li>
+            <li>
+              <label for="name">이름</label>
+              <input type="text" name="name" id="name" required size="6">
+            </li>
+            <li>
+              <label for="program">부서명</label>
+              <select name="program" id="program">
+                <script>
+                  //부서명 선택하는 드롭다운
+                  //const programList = ["독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학"];
+                  for (var i = 0; i < programList.length; i++)
+                    document.write('<option value="' + programList[i] + '">' + programList[i] + '</option>');
+                </script>
+              </select>
+            </li>
+            <li>
+              <label for="classTime">환불차시</label>
+              <input type="text" name="classTime" id="classTime" size="4">
+            </li>
+            <li>
+              <label for="mcost">재료비</label>
+              <input type="text" name="mcost" id="mcost" value=0 size="6">
+            </li>
+            <li>
+              <label for="startDate">환불 시작일</label>
+              <input type="date" name="startDate">
+            </li>
+            <li>
+              <label for="memo">비고</label>
+              <input type="text" name="memo" id="memo" size="40">
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="입력">
+      </form>
+    </div>
   </div>
 
   <?php

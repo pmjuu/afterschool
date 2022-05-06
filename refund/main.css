@@ -1,14 +1,14 @@
-div {
-  width: 100%;
+div.insert_form {
+  width: 90%;
 }
 
-div.insert {
-  width: 50%;
+div.form1 {
+  width: 40%;
   float: left;
 }
 
-div.insert2 {
-  width: 50%;
+div.form2 {
+  width: 40%;
   float: right;
 }
 
