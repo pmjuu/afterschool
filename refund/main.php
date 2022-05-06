@@ -52,7 +52,7 @@
             </li>
             <li>
               <label for="memo">비고</label>
-              <input type="text" name="memo" id="memo" size="40">
+              <input type="text" name="memo" id="memo" size="35">
             </li>
           </ul>
         </fieldset>
@@ -101,7 +101,7 @@
             </li>
             <li>
               <label for="memo">비고</label>
-              <input type="text" name="memo" id="memo" size="40">
+              <input type="text" name="memo" id="memo" size="35">
             </li>
           </ul>
         </fieldset>
@@ -109,6 +109,7 @@
       </form>
     </div>
   </div>
+  <br>
 
   <?php
     $con=mysqli_connect("localhost", "root", "1234", "as_db") or die("MySQL 접속 실패");
@@ -126,7 +127,7 @@
     }
 
     $programList = array("독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학");
-    echo "<br><h2> 부서별 취소 학생 수 </h2>";
+    echo "<h2> 부서별 취소 학생 수 </h2>";
     echo "<TABLE>";
       echo "<TR>";
         foreach($programList as $i)

@@ -8,14 +8,14 @@
     $count = mysqli_num_rows($ret);
     if ($count == 0) {
       echo $_GET['studentNo']." 해당 학생이 없음"."<br>";
-      echo "<br> <a href='main.php'> 환불 초기 화면으로 돌아가기 </a>";
+      echo "<br> <a href='main.php'> 환불 관리 초기 화면으로 돌아가기 </a>";
       exit();
     }
   }
   else {
     echo "데이터 조회 실패<br>";
     echo "실패 원인:".mysqli_error($con);
-    echo "<br> <a href='main.php'> 환불 초기 화면으로 돌아가기 </a>";
+    echo "<br> <a href='main.php'> 환불 관리 초기 화면으로 돌아가기 </a>";
     exit();
   }
 
@@ -33,6 +33,7 @@
   $mcost = $row['mcost'];
   $total = $row['total'];
   $startDate = $row['startDate'];
+  $memo = " ";
   $memo = $row['memo'];
 ?>
 
@@ -54,12 +55,8 @@
       <li>
         <label for="grade">학년</label>
         <input type="text" name="grade" value=<?php echo $grade ?> size="3">
-      </li>
-      <li>
         <label for="class">반</label>
         <input type="text" name="class" value=<?php echo $class ?> size="3">
-      </li>
-      <li>
         <label for="number">번호</label>
         <input type="text" name="number" value=<?php echo $number ?> size="3">
       </li>
@@ -97,7 +94,7 @@
       </li>
       <li>
         <label for="memo">비고</label>
-        <input type="text" name="memo" value=<?php echo $memo ?> size="40"> <!--띄어쓰기 뒤로는 없어짐. 왜지?-->
+        <input type="text" name="memo" value=<?php echo $memo ?> size="40">
       </li>
     </ul>
     <input type="submit" value="정보 수정">

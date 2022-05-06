@@ -53,5 +53,5 @@
   }
   mysqli_close($con);
 
-  echo "<br><br><a href='main.php'>환불 초기 화면으로 돌아가기</a>";
+  echo "<br><br><a href='main.php'>환불 관리 초기 화면으로 돌아가기</a>";
 ?>
