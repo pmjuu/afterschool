@@ -18,9 +18,9 @@
             <li>
               <label for="grade">학년</label>
               <input type="text" name="grade" id="grade" size="3">
-              <label for="class">반</label>
+              <label for="class"> 반</label>
               <input type="text" name="class" id="class" size="3">
-              <label for="number">번호</label>
+              <label for="number"> 번호</label>
               <input type="text" name="number" id="number" size="3">
             </li>
             <li>
@@ -67,13 +67,9 @@
             <li>
               <label for="grade">학년</label>
               <input type="text" name="grade" id="grade" size="3">
-            </li>
-            <li>
-              <label for="class">반</label>
+              <label for="class"> 반</label>
               <input type="text" name="class" id="class" size="3">
-            </li>
-            <li>
-              <label for="number">번호</label>
+              <label for="number"> 번호</label>
               <input type="text" name="number" id="number" size="3">
             </li>
             <li>
@@ -130,7 +126,7 @@
     }
 
     $programList = array("독서논술토론", "창의미술", "비즈토탈공예", "컴퓨터", "수학", "영어회화", "피아노", "바이올린", "로봇과학", "음악줄넘기", "요리", "창의실험과학", "농구", "방송댄스", "바둑체스", "축구", "창의생명과학");
-    echo "<h2> 부서별 취소 학생 수 </h2>";
+    echo "<br><h2> 부서별 취소 학생 수 </h2>";
     echo "<TABLE>";
       echo "<TR>";
         foreach($programList as $i)
