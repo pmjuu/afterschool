@@ -93,7 +93,7 @@
       </li>
       <li>
         <label for="memo">비고</label>
-        <input type="text" name="memo" value=<?php echo $memo ?> size="40">
+        <input type="text" name="memo" value=<?php echo $memo ?>>
       </li>
     </ul>
     <input type="submit" value="정보 수정">
