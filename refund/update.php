@@ -33,7 +33,6 @@
   $mcost = $row['mcost'];
   $total = $row['total'];
   $startDate = $row['startDate'];
-  $memo = " ";
   $memo = $row['memo'];
 ?>
 
