@@ -1,7 +1,16 @@
+body {
+  background-color: #8ea7ba;
+}
+h1 {
+  text-align: center;
+}
 div.insert_form {
   width: 90%;
+  background-color: #afc0ce;
 }
-
+legend {
+  border: 1px solid #ffffff;
+}
 div.form1 {
   width: 50%;
   float: left;
@@ -13,8 +22,9 @@ div.form2 {
 }
 
 table {
-  border: 1px solid #444444;
+  border: 1px solid #ffffff;
   border-collapse: collapse;
+  background-color: #afc0ce;
 }
 th {
   background-color: #cccccc;

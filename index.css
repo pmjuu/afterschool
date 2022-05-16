@@ -1,3 +1,6 @@
+body {
+  background-color: #8ea7ba;
+}
 h1 {
   text-align: center;
 }
@@ -6,7 +9,8 @@ div {
   justify-content: center;
 }
 ul {
-  border: 1px solid rgb(0, 0, 0);
+  background-color: #afc0ce;
+  border: 1px solid rgb(255, 255, 255);
   width: 120px;
   margin: 10px;
   padding-right: 20px;
@@ -14,3 +18,8 @@ ul {
 li {
   margin: 10px;
 }
+a:link {
+  color:rgb(65, 65, 65);
+  text-decoration: none;
+}
+a:visited {color:rgb(112, 112, 112);}
