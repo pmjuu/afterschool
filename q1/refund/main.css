@@ -6,10 +6,10 @@ h1 {
 }
 div.insert_form {
   width: 90%;
-  background-color: #afc0ce;
 }
-legend {
+legend, fieldset {
   border: 1px solid #ffffff;
+  background-color: #afc0ce;
 }
 div.form1 {
   width: 50%;
@@ -31,7 +31,6 @@ th {
   cursor: pointer;
 }
 th, td {
-  border: 1px solid #444444;
   padding: 5px
 }
 table#refundTBL tr td:first-child {
