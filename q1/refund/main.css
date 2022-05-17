@@ -1,6 +1,3 @@
-body {
-  background-color: #8ea7ba;
-}
 h1 {
   text-align: center;
 }
@@ -21,11 +18,11 @@ div.form2 {
   float: right;
 }
 
-table {
+/* table {
   border: 1px solid #ffffff;
   border-collapse: collapse;
   background-color: #afc0ce;
-}
+} */
 th {
   background-color: #cccccc;
   cursor: pointer;
